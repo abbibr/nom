@@ -1,0 +1,76 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(219, 214, 214);
+}
+
+h1
+{
+    margin: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 5px inset yellow;
+    padding: 10px 0;
+}
+
+.ota
+{
+    width: 150px;
+    height: 150px;
+    border: 4px solid #000;
+    background-color: #fff;
+    margin-left: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.h2
+{
+    margin: 0;
+}
+
+.bola
+{
+    margin-top: -20px;
+    width: 150px;
+    height: 150px;
+    background-color: chocolate;
+    /* transform: rotate(57deg);  57 daraja buradi */ 
+    /* transform-origin: 0% 0%;  uchidan ushlaydi */
+    /* transform: skewX(20deg);  20 daraja qishaytiradi */
+    /* transform: scale(0.5);  kichkina yoki kattalashtiradi */
+    transition-duration: 1s; /* 1 sekund bajariladi */
+    /* transition-property: width, color, background-color; */
+    transition-delay: 0.5s;  /* 0.5 sekund kutadi keyin bajariladi */
+    transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ota:hover .bola
+{
+    transform:translate(200px, 100px);
+    color: red;
+    background-color: yellow;
+}
+
+a
+{
+    margin-left: 20px;
+    padding: 12px 40px;
+    font-size: 18px;
+    background-color: rgb(16, 16, 173);
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid blue;
+    transition-duration: .5s;
+    transition-property: background-color, color;
+}
+
+a:hover
+{
+    color: blue;
+    background-color: #fff;
+}
